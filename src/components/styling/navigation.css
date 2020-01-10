@@ -1,0 +1,12 @@
+.navigation {
+  list-style: none;
+
+}
+
+A {
+  margin: 0 2px 0 2px;
+}
+
+A:hover {
+  color: red;
+}
