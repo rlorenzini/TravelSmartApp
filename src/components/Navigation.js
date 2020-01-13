@@ -1,8 +1,10 @@
 import React from 'react';
+// Packages
 import { useRoutes, A } from 'hookrouter';
+// Components
 import routes from './routes/router';
 import NoPageFound from './NoPageFound';
-
+// Styling 
 import './styling/navigation.css';
 
 // add url and component into router.js

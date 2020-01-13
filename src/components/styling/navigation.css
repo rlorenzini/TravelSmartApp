@@ -1,3 +1,5 @@
+/* header CSS here */
+
 .navigation {
   list-style: none;
 
@@ -5,8 +7,9 @@
 
 A {
   margin: 0 2px 0 2px;
+  color: var(--navLinks, black);
 }
 
 A:hover {
-  color: red;
+  color: var(--navLinksActive, red);
 }
