@@ -6,6 +6,7 @@ import { MainAppContext } from './providers/MainAppProvider';
 function Index() {
 
   // must import every state and function you want to use
+  // context does not need to be called inside {} when outside of render() function
 
   const { test, setTest, number, setNumber, boolean, setBoolean } = useContext(MainAppContext)
 
@@ -15,7 +16,6 @@ function Index() {
 
   // a function is defined with const and uses arrow syntax inside functional components
   const changeNumber = () => {
-    // context does not need to be called inside {} when outside of render() function
     if (boolean === true) {
       setBoolean(false)
       setNumber(12345)
