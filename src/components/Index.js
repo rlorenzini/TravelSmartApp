@@ -18,10 +18,10 @@ function Index() {
 
   // this useEffect() is tracking a local state I just created with useState()
   // local useEffect() cannot track global/context states
-  // would have to create a useEffect() in the provider to track global states 
+  // would have to create a useEffect() in the provider to track global states
   useEffect(() => {
     console.log("useEffect() has triggered because changingValue has changed to: " + changingValue)
-  }, changingValue)
+  }, [changingValue])
 
   // a function is defined with const and uses arrow syntax inside functional components
   const changeNumber = () => {
