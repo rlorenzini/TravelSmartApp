@@ -30,6 +30,7 @@ const MainAppProvider = props => {
   // useEffect() gets triggered during render and every update
   // useEffect((do something), []) gets triggered only during render
   // useEffect((do something), [state]) only triggers when said state updates
+  // useEffect((do something), [can, watch, multiple, states])
 
   function useFetchDataToJson() {
     // forgot what this function does exactly; will have to look at my source repo
